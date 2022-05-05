@@ -1,0 +1,15 @@
+<%- include('includes/header.ejs') %>
+  <link rel="stylesheet" href="/css/posts.css">
+</head>
+<body>
+  <div class="container">
+        <form action="/create-review" method="post" autocomplete="off">
+          <input  type="text" name="user_name" id="user_name" placeholder="Enter your name"><br><br>
+          <input required type="text" name="game_name" id="game_name" placeholder="Enter the name of the game"><br><br>
+          <textarea required name="game_review" id="game_review" placeholder="Enter the game review of Your Game"></textarea>
+          <button type="submit">Submit Your Review</button><button type="reset">Reset Responses</button>
+          <button onclick="window.location.replace('/reviews')" type="button">Want to See Others Reviews? Click Here!</button>
+        </form>
+      <%- include('includes/nav-bar.ejs') %>
+    </div>
+<%- include('includes/footer.ejs') %>

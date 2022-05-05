@@ -1,0 +1,45 @@
+.index-text-right-block {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 110%;
+  margin-top: -27px;
+  width: 50%;
+  position: absolute;
+  transform: skew(-20deg);
+  right: -12%;
+}
+
+.index-text-right-block h1 {
+  color: white;
+  transform: skew(20deg);
+  margin-top: 40%;
+  margin-left: 10%;  
+}
+
+.index-text-right-block button {
+  margin-left: 25%;
+  width: 250px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.write-a-review-btn {
+  color: white;
+  background-color: rgb(230, 79, 58);
+  border: none;
+}
+
+.read-others-review-btn {
+  color: white;
+  background-color: transparent;
+  border: 3px solid white !important;
+}
+
+.nav-bar-ul {
+  transform: skew(20deg);
+  position: absolute;
+  top: 0;
+  margin-left: 100px;
+}

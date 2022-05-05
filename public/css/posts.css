@@ -1,0 +1,59 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: auto;
+    top: 15%;
+    position: relative;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    height: 500px;
+    font-size: 13pt;
+    color: white;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 15px;
+    width: 90%;
+    color: white;
+}
+
+textarea {
+    height: 310px;
+    resize: none;
+}
+
+.nav-bar-ul {
+    position: relative;
+    bottom: 565px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    float: left;
+    margin-left: 20px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+}
+
+button[type='reset'] {
+    background-color: white;
+    color: royalblue;
+
+}
+
+button[type="button"] {
+    background-color: crimson;
+    color: white;
+    float: right;
+    margin-right: 20px;
+}

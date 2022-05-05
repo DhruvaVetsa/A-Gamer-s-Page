@@ -1,0 +1,16 @@
+<%- include('includes/header.ejs') %>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="index-text-right-block">
+      <h1>
+        We help you to find reviews<br> for your <span style="color: gold;">favourite games</span>.
+      </h1>
+      <div style="transform: skew(20deg);">
+        <button onclick="window.location.replace('/post')" class="write-a-review-btn">Write Your Review</button><br><br>
+        <button onclick="window.location.replace('/reviews')" class="read-others-review-btn">Read Other's Review</button>
+      </div>
+      <%- include('includes/nav-bar.ejs') %>
+    </div>
+<%- include('includes/footer.ejs') %> 

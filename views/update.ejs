@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+  <link rel="stylesheet" href="/css/posts.css">
+</head>
+<body>
+  <div class="container">
+        <form action="/edit-review/<%= game_details._id %>" method="post" autocomplete="off">
+          <input  type="text" name="user_name" id="user_name" placeholder="Enter your name" value="<%= game_details.user_name_d %>"><br><br>
+          <input required type="text" name="game_name" id="game_name" placeholder="Enter the name of the game" value="<%= game_details.game_name_d %>"><br><br>
+          <textarea required name="game_review" id="game_review" placeholder="Enter the game review of Your Game"><%= game_details.review_d %></textarea>
+          <button type="submit">Change Your Review</button>
+        </form>
+      <%- include('includes/nav-bar.ejs') %>
+    </div>
+<%- include('includes/footer.ejs') %>

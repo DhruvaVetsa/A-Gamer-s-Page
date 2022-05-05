@@ -1,0 +1,58 @@
+.nav-bar-ul {
+    position: relative;
+    margin-top: -30px;
+}
+
+#allReviews {
+    background-color: white;
+    height: 60%;
+    padding: 50px;
+}
+
+.nav-bar-container {
+    height: 40%;
+}
+
+.review_game_div {
+    background-color: gold;
+    padding: 20px;
+}
+
+.review_enterer_name_p {
+    margin: 5px;
+    font-size: 10pt;
+}
+
+i {
+    font-size: 20pt;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    padding-left: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+.game_name_entered_p {
+    margin: 5px;
+    font-size: 10pt;
+}
+
+button {
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+}
+
+.update_review_btn {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.delete_review_btn {
+    background-color: red;
+    color: white;
+}

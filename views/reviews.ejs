@@ -1,0 +1,29 @@
+<%- include('includes/header.ejs') %>
+    <link rel="stylesheet" href="/css/reviews.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar-container"><%- include('includes/nav-bar.ejs') %></div>
+        <div id="allReviews">
+            <h1>People's Reviews</h1>
+            <% reviews.forEach((user_review) => { %>
+                <div class="review_game_div">
+                    <table>
+                        <tr>
+                            <td>
+                                <i class="fas fa-user"></i>
+                            </td>
+                            <td>
+                                <p class="review_enterer_name_p"><%= user_review.user_name_d %></p>
+                                <p class="game_name_entered_p"><%= user_review.game_name_d %></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="review_entered_p"><%= user_review.review_d %></p>
+                    <a href="/update-review/<%= user_review.id %>"><button class="update_review_btn">Update</button></a>
+                    <a href="/delete-review/<%= user_review.id %>"><button class="delete_review_btn">Delete</button></a>
+                </div>
+            <% }); %>
+        </div>
+<%- include('includes/footer.ejs') %>
